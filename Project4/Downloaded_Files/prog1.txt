@@ -1,0 +1,47 @@
+
+
+#comment
+	noop
+	noop
+	mov r1 5
+	mov r2 28
+	mov r3 5939451
+	mov r4 123
+	mov r5 7896
+	inc r3
+	inc r4
+	inc r5
+	inc r1
+	inc r2
+	inc r4
+	jmp fwdpnt
+	noop
+	noop
+	noop
+	noop
+	noop
+	noop
+	noop
+	noop
+	noop
+fwdpnt	noop	#another comment
+	mov r5 34
+	add r1 r4
+	add r5 r1
+	div r2 r3
+	mul r5 r1
+	mov r1 1
+	add r1 r1
+#ok start a loop, use reg 1 to keep counter, reg 2 for address
+	mov r1 30000
+	mov r2 EndOfProg
+begLoop	jz r1 r2
+	mov r5 34
+	add r3 r4
+	add r5 r3
+	div r5 r3
+	mul r5 r1
+	mov r3 1
+	dec r1
+	jmp begLoop
+EndOfProg	end

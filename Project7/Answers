@@ -1,0 +1,5 @@
+I would expect the best performance to peak when the number of threads equals the number of logical processors.  
+
+I expect this because at no time can the processor do more work than the number of processors it contains regardless of the number of threads (unless the number of threads are LESS than the number of processors).
+
+I did infact see this.  Once the number of threads passed the number of corse there was no performance gain.

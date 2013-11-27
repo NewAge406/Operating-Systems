@@ -1,0 +1,35 @@
+** README Concerning files contained in Kundig_460_Project7.zip **
+File 1: This README
+File 2: Makefile
+FIle 3: jobJandler.cpp
+File 4: Job.cpp
+File 5: Job.h
+File 6: CSCI_460_ThreadsChart
+
+** README
+The README is what you are reading now. It details what files are contained in .zip file Kundig_460_Project7.zip how to compile it.
+
+** Makefile
+Was also provided by you.  I made no changes to it which is troublesome because you said to add the job file to the object section of the make file.  I did NOT do that but it still seems to work? The command to compile the project is "make" and to clean is "make clean"
+
+** jobHandler.cpp
+Contains the Main and the thread Function.  The main has a loop that makes the Jobs and adds those jobs to a Job vector. The second loop creates the threads. The third joins the threads and finally the completed jobs are printed.
+
+The thread function has one while loop that locks and unlocks the jobJar. It gets the job, does the job then puts that completed job onto the completed job jar. 
+
+** Job.h
+Contains the Job class and attributs contained within
+
+** Job.cpp 
+Defines the functions of the Job class, in this case just the doJobs method.
+
+** Instructions for running
+Navigate to the folder containing the files you extracted. Open a command window pointed at that location. Type "make" into the command window. Type "./doJobs" followed by two integers, the first being number of threads and the second is how many Jobs.
+
+** Deviations
+I don't think I defiated from the design described.
+
+** CSCI_460_ThreadsChart
+Its just that! My graph of the threads performance. Similar to your except my user time was just above 3 seconds.
+
+

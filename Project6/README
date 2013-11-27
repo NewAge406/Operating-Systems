@@ -1,0 +1,12 @@
+** README Concerning files contained in Kundig_406_Project6.zip **
+File 1: This README
+File 2: Makefile
+File 3: producerConsumer.c
+
+The README is what you are reading now. It details what files are contained in .zip file Kundig_460_Project6.zip how to compile it.
+
+The Makefile was provided by Dr. Douglas Raiford. To use it type "make" from a command line pointed at the folder Kundig_460_Project6.zip. To clean up the output from "make" type "make clean" from the same place.
+
+The executable file "prodcon" is produced and is executed using the "./prodcon" command. The executable expects three integers. The first is a length of time to wait, the second is how many producer threads and the third defines how many consumer threads.
+
+The producerConsumer.c files contains the C code the Makefile compiles. It contains a Main and four functions: a producer and consumer function that calls an insert_item and remove_item function respectively. The main checks for a proper number of arguments, proper initialization of semaphores and threads, finally sleeps before exiting.

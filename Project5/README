@@ -1,0 +1,11 @@
+README
+*Included file requester.c
+The file consists of a structure definition, two Q's with unique identifiers 20 and 21 and a for loop that loops 100 times, assigning a random number to the number variable of the msgp structure, sends it using the msgsnd command and the qid of Supplier. The status is checked for negativity then a message receive command is issued containing the structure from supplier with new squared number. That number is printed to the console.
+I did deviate slightly in that I didn't use the answer variable and set my permissions right!! haha
+
+*Included file supplier.c
+The supplier.c file consists of the same structure definition as requester.c, two Q's with unique identifiers 20 and 21 and an infinite while loop that issues a message receive command to get the random number from requester, checks status for negativity, squares the number and send it back. I suppose I could check status again but don't feel the need. I would if error
+I deviated again in that I didn't use the returnSol variable. Most everything else should be inline with what you annotated.
+
+*Included file Makefile
+I just used the make and make clean like usual with it. Not sure what else to say so thats it!
