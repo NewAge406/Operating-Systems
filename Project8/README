@@ -1,0 +1,15 @@
+** README Concerning files contained in Kundig_460_Project8.zip **
+File 1: This README
+File 2: Makefile
+File 3: myShell.c
+
+** Makefile
+Just type make to compile the code or make clean to clean up.
+
+** myShell.c
+This is a C program written to mimmick a shell and a couple of it functions. It contains one function that determines what the command is and what to do with it. There is also an infinite while loop that takes the commands and before shipping them over to the parseCommand funtion it looks for a special character "!".
+
+** Deviations
+I don't think I deviated in any way
+
+
